@@ -1,11 +1,25 @@
 %% OptReg A5 - Problem 2
 %% Initialization and model definition
 
+%{
+%Real plant
+A = [0    0    0;
+     0    0    1;
+     0.1 -0.855 1.85];
+
+B = [1 0 0]';
+%}
+ 
+%Imperfect model
 A = [0    0    0;
      0    0    1;
      0.1 -0.79 1.78];
 
 B = [1 0 0.1]';
+
+
+ 
+
 
 C = [0 0 1];
 
