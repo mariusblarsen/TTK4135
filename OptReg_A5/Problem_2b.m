@@ -96,6 +96,7 @@ box('on')
 grid on
 
 subplot(2,1,2);
+%stairs(t2,u); % Plot steps instead of continious u
 plot(t2,u,'r',t2,u,'ro'),grid
 box('on')
 grid on
