@@ -40,7 +40,7 @@ Q1 = zeros(mx,mx);
 
 %% Generate system matrixes for linear model
 Aeq = gen_aeq(A,B,N,mx,mu); % Generate A, hint: gen_aeq
-beq = sparse([A*x0; zeros((N-1)*nx,1)]); % Generate b
+beq = sparse([A*x0; zeros((N-1)*mx,1)]); % Generate b
 
 %% Part f)
 % Inequality constraint
@@ -62,7 +62,7 @@ vub(N*mx+M*mu)  = 0;                    % We want the last input to be zero
 %% Solve QP problem with linear model
 opt = optimset('Display','notify', 'Diagnostics','off', 'LargeScale','off');
 [z,fval,exitflag,output,lambda] = quadprog(G,[],[],[],Aeq,beq,vlb,vub,[],opt);
-
+output
 
 
 %% Extract control inputs and states

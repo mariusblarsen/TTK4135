@@ -24,7 +24,7 @@ Q1 = [0  0   0;
      0  0   0;
      0  0   2];
 
-r = 0.5; 
+r = 1; 
 I_N = sparse(eye(N));
 Rt = 2*r;
 R = sparse(kron(I_N, Rt));
