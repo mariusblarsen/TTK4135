@@ -9,8 +9,6 @@ x0_hard = [-1.2, 1]';
 
 %% Newton algorithm
 
-
-
 [x_opt_n, fval_opt_n, x_iter_n, f_iter_n, alpha_n] = min_rosenbrock_newton(x0);
 [x_opt_n_h, fval_opt_n_h, x_iter_n_h, f_iter_n_h, alpha_n_h] = min_rosenbrock_newton(x0_hard);
 

@@ -12,6 +12,7 @@ x0_hard = [-1.2, 1]';
 [x_opt_bfgs_h, fval_opt_bfgs_h, x_iter_bfgs_h, f_iter_bfgs_h, alpha_bfgs_h] = min_rosenbrock_bfgs(x0_hard);
 
 %% Plotting
+
 % "Easy" x0
 plot_iter_rosenbrock(x_iter_bfgs, 1, x0);
 
